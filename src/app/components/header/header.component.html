@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="logo">
+      <a href="/">
+        <img src="assets/logo.png" alt="Logo">
+      </a>
+    </div>
+    <!-- Botão de toggle para abrir/fechar o sidebar -->
+    <button (click)="toggleSidebar()" class="sidebar-toggle">☰</button>
+    <nav class="nav">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="active">Início</a></li>
+        <li><a routerLink="/sobre" routerLinkActive="active">Sobre Mim</a></li>
+        <li><a routerLink="/projetos" routerLinkActive="active">Projetos</a></li>
+        <li><a routerLink="/contato" routerLinkActive="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  

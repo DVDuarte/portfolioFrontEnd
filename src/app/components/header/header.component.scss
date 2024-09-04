@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Escondido por padrão, será exibido em telas menores */
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav ul li {
+    display: inline;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav ul li a:hover,
+  .nav ul li a.active {
+    background-color: #555;
+  }
+  
+  /* Estilos responsivos para o botão de toggle */
+  @media (max-width: 768px) {
+    .nav {
+      display: none; /* Esconde o menu de navegação em telas menores */
+    }
+  
+    .sidebar-toggle {
+      display: block; /* Mostra o botão de toggle em telas menores */
+    }
+  }
+  
+  .header {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #333;
+  }
+  
+  .header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .header a:hover {
+    background-color: #555;
+  }
+  
+  .header a.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
